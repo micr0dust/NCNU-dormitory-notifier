@@ -1,0 +1,16 @@
+{
+    "name": "NCNU-dormitory-notifier",
+    "version": "1.0.0",
+    "scripts": {
+        "package": "sudo pkg package.json -t node10-linux-x64 --out-path dist && cp ./node_modules/opn/xdg-open ./dist/xdg-open && cp <add here all others file you need to import>",
+        "start": "node ./index.js"
+    },
+    "main": "index.js",
+    "license": "MIT",
+    "dependencies": {
+        "node-notifier": "^10.0.1",
+        "nodemon": "^2.0.16",
+        "open": "^8.4.0",
+        "puppeteer": "^14.3.0"
+    }
+}
